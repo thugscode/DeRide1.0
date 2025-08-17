@@ -129,7 +129,7 @@ class rideSharing extends Contract {
                 const origins = `${source.lat},${source.lng}`;
                 const destinations = `${destination.lat},${destination.lng}`;
         
-                const apiKey = 'AIzaSyAPTE9jvUShtI9w6evM7SJ_0ig77BfzZVc'; // Replace with your Google Maps API key
+                const apiKey = '<Paste your Google Maps API key here>'; // Replace with your Google Maps API key
                 const directionsApiUrl = `https://maps.googleapis.com/maps/api/directions/json`;
         
                 const directionsParams = {
