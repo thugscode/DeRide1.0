@@ -349,7 +349,7 @@ class Dashboard extends Component {
     this.timerInterval = setInterval(() => {
       this.setState((prevState) => {
         const newTimer = prevState.timer + 1;
-        if (newTimer === 180) {
+        if (newTimer === 60) {
           this.stopTimer();
           swal({
             text: 'Fetching the latest ride information...',
@@ -591,7 +591,7 @@ class Dashboard extends Component {
                     {this.state.showCountdown && (
                       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '20px 0', position: 'relative' }}>
                         <CircularProgress size={80} style={{ color: '#4CAF50' }} />
-                        <span style={{ position: 'absolute' }}> {Math.floor((180 - this.state.timer) / 60)}:{(180 - this.state.timer) % 60}</span>
+                        <span style={{ position: 'absolute' }}> {Math.floor((60 - this.state.timer) / 60)}:{(60 - this.state.timer) % 60}</span>
                       </div>
                     )}
                     <Button

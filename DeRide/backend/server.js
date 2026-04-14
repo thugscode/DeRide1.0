@@ -217,7 +217,7 @@ app.post("/update-user", async (req, res) => {
 
       gateway.disconnect();
 
-      res.status(200).json({ status: true, title: 'Ride details updated! Please wait 3 minutes for your ride.' });
+      res.status(200).json({ status: true, title: 'Ride details updated! Please wait 1 minutes for your ride.' });
 
       (async () => {
         const gateway1 = new Gateway();
@@ -228,7 +228,7 @@ app.post("/update-user", async (req, res) => {
 
         const noOfUser = await contract1.evaluateTransaction('GetNumberOfUsers');
         const numberOfUsers = JSON.parse(noOfUser.toString());
-        if (numberOfUsers > 1) {
+        if (numberOfUsers > 2) {
           let transactionSuccess = false;
           let transactionAttempts = 0;
           const maxTransactionAttempts = 5;

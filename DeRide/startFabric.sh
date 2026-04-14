@@ -18,13 +18,13 @@ CC_SRC_LANGUAGE=`echo "$CC_SRC_LANGUAGE" | tr [:upper:] [:lower:]`
 ######################################################
 
 if [ "$CC_SRC_LANGUAGE" = "go" -o "$CC_SRC_LANGUAGE" = "golang" ] ; then
-    CC_SRC_PATH="/home/shailesh/DeRide2.0/DeRideFair/chaincode/go/"
+    CC_SRC_PATH="/home/shailesh/DeRide1.0/DeRide/chaincode/go/"
 elif [ "$CC_SRC_LANGUAGE" = "javascript" ]; then
-    CC_SRC_PATH="/home/shailesh/DeRide2.0/DeRideFair/chaincode/javascript/"
+    CC_SRC_PATH="/home/shailesh/DeRide1.0/DeRide/chaincode/javascript/"
 elif [ "$CC_SRC_LANGUAGE" = "java" ]; then
-    CC_SRC_PATH="/home/shailesh/DeRide2.0/DeRideFair/chaincode/java/"
+    CC_SRC_PATH="/home/shailesh/DeRide1.0/DeRide/chaincode/java/"
 elif [ "$CC_SRC_LANGUAGE" = "typescript" ]; then
-    CC_SRC_PATH="/home/shailesh/DeRide2.0/DeRideFair/chaincode/typescript/"
+    CC_SRC_PATH="/home/shailesh/DeRide1.0/DeRide/chaincode/typescript/"
 else
     echo The chaincode language ${CC_SRC_LANGUAGE} is not supported by this script
     echo Supported chaincode languages are: go, java, javascript, and typescript
